@@ -24,5 +24,5 @@ fighting: light attack, hard attack
 
 print(preamble)
 print(introduction)
-attack(player, bandit)
+battle(player, bandit)
 

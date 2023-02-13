@@ -1,9 +1,10 @@
 #As a user, I want Hercules (and each enemy) to have health, attack power, and a List of attack names saved in a Dictionary. 
 
 player = {
-    "name": "Hercules",
+    "Name": "Hercules",
     "Health": 10,
     "Armor": 1,
+    "Agility": 10,
     "Attack Power": 10,
     "Slash Attack": 5,
     "Heavy Blow": 8,
