@@ -2,6 +2,7 @@
 from story import *
 from characters import *
 from functions import *
+from battle import *
 
 '''As a developer, I want to make at least five commits on GitHub with descriptive messages.  
 
@@ -22,7 +23,11 @@ As a developer, I want all of my functions to have a Single Responsibility.�
 fighting: light attack, hard attack
 '''
 
+player = Player("Heracles", 10, 10, 10)
+bandit = Bandit("Jerk", 3, 2, 2)
+
+
 print(preamble)
 print(introduction)
-battle(player, bandit)
+attack(player, bandit)
 

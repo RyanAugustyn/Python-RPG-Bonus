@@ -1,21 +1,25 @@
 #As a user, I want Hercules (and each enemy) to have health, attack power, and a List of attack names saved in a Dictionary. 
 
-player = {
-    "Name": "Hercules",
-    "Health": 10,
-    "Armor": 1,
-    "Agility": 10,
-    "Attack Power": 10,
-    "Slash Attack": 5,
-    "Heavy Blow": 8,
-    "Shield Bash": 3,
-}
+class Character:
+    def __init__(self, name, health, attack_power, agility):
+        self.name = name
+        self.health = health
+        self.attack_power = attack_power
+        self.agility = agility
 
-bandit = {
-    "name": "Bandidt",
-    "Health": 2, 
-    "Armor": 0,
-    "Attack Power": 2,
-    "Wild Slash": 1,
-    "Stab": 1
-}
+
+
+
+class Player(Character):
+    def __init__(self, name, health, attack_power, agility):
+        Character.__init__(self, name, health, attack_power, agility)
+        # self.abilities = {"slash": 10, 
+        # "lunge": 5,
+        # "shield_bash": 3}
+
+
+class Bandit(Character):
+    def __init__(self, name, health, attack_power, agility):
+        Character.__init__(self, name, health, attack_power, agility)
+
+
